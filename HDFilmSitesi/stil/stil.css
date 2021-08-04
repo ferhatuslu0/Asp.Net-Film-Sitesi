@@ -1,0 +1,159 @@
+﻿@charset "utf-8";
+/* CSS Document */
+#tasiyici{width:1100px;box-shadow: 0px 0px 20px #0d3a94;
+background-color:#8DEBDD;
+margin:0px auto;}
+
+#logoust{ margin:0px;height:120px;
+background-image:url(../resimler/logo.jpg);}
+
+.menuler{margin:10px;height:50px;width:auto; border:groove;
+background-color:#4fc7ee;}
+
+.sol{width:190px; height:1030px; float:left;box-shadow: 1px 1px 5px #0d3a94;
+background-color:#4fc7ee;margin-left:10px;}
+
+.sag{width:190px;float:right;box-shadow: 0px 0px 5px #0d3a94;
+background-color:#4fc7ee;margin-left:780px; margin-top:-1030px;margin-right:10px;}
+
+#footer{height:50px;
+background-color:#0B82C4;
+border-bottom-left-radius:10px;
+border-bottom-right-radius:10px;
+margin-top:500px;}
+
+#tasiyici, .menuler, #logoust, .sol, .sag{
+	border-radius:10px;}
+	
+.menuler ul{list-style-type:none;padding:0px; margin:16px auto;margin-left:55px;}
+	
+.menuler ul li{float:left;margin:10px;}
+
+ /* butonlariçin */
+.myButton {
+	-moz-box-shadow: 0px 1px 2px 0px #f0f7fa;
+	-webkit-box-shadow: 0px 1px 2px 0px #f0f7fa;
+	box-shadow: 0px 1px 2px 0px #f0f7fa;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #32a5cf), color-stop(1, #028ecf));
+	background:-moz-linear-gradient(top, #32a5cf 5%, #028ecf 100%);
+	background:-webkit-linear-gradient(top, #32a5cf 5%, #028ecf 100%);
+	background:-o-linear-gradient(top, #32a5cf 5%, #028ecf 100%);
+	background:-ms-linear-gradient(top, #32a5cf 5%, #028ecf 100%);
+	background:linear-gradient(to bottom, #32a5cf 5%, #028ecf 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#32a5cf', endColorstr='#028ecf',GradientType=0);
+	background-color:#32a5cf;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #1b91db;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:5px 38px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #5b6178;
+    margin-top:-20px;
+    
+    
+   
+    
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #028ecf), color-stop(1, #32a5cf));
+	background:-moz-linear-gradient(top, #028ecf 5%, #32a5cf 100%);
+	background:-webkit-linear-gradient(top, #028ecf 5%, #32a5cf 100%);
+	background:-o-linear-gradient(top, #028ecf 5%, #32a5cf 100%);
+	background:-ms-linear-gradient(top, #028ecf 5%, #32a5cf 100%);
+	background:linear-gradient(to bottom, #028ecf 5%, #32a5cf 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#028ecf', endColorstr='#32a5cf',GradientType=0);
+	background-color:#028ecf;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+#footer p{text-align:center; color:#F0F0F0; font-weight:bold; font-size:small; letter-spacing:1px;
+padding:15px; margin:0px; margin-left:auto;}
+
+.solresim {}
+.solresim img { padding:5px;
+width:145px; height:230px; margin-left:17px;
+border-radius:20px; }
+
+.solresim div{width: 270px; height: 400px; padding: 15px; color: #333; 
+  text-align: left; font-size: 16px;}
+
+
+/*başlıklar için*/
+.basliklar {
+	-moz-box-shadow: 0px 1px 2px 0px #f0f7fa;
+	-webkit-box-shadow: 0px 1px 2px 0px #f0f7fa;
+	box-shadow: 0px 1px 2px 0px #f0f7fa;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #32a5cf), color-stop(1, #028ecf));
+	background:-moz-linear-gradient(top, #32a5cf 5%, #028ecf 100%);
+	background:-webkit-linear-gradient(top, #32a5cf 5%, #028ecf 100%);
+	background:-o-linear-gradient(top, #32a5cf 5%, #028ecf 100%);
+	background:-ms-linear-gradient(top, #32a5cf 5%, #028ecf 100%);
+	background:linear-gradient(to bottom, #32a5cf 5%, #028ecf 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#32a5cf', endColorstr='#028ecf',GradientType=0);
+	background-color:#32a5cf;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #1b91db;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:13px;
+	padding:14px 0px;
+	text-decoration:none;
+	text-shadow:0px 1px 2px #283966;
+	text-align:center; margin:0px; 
+	width:100%;
+    
+	
+}
+
+
+/* baslık ekledik */
+
+
+#orta {
+    
+    margin-right: 230px;
+    float: right;
+    margin-bottom:-900px;width:640px;height:1637px;
+margin-top:0px;
+    border-radius:10px;
+}
+#orta img { padding:3px;
+width:142px; height:225px;
+border-radius:20px;margin-top:2px;margin-left:3px;}
+
+
+
+.ic_bolme {
+    box-shadow: 0px 0px 30px #d6ddea;
+    float: left;
+    width: 155px;
+    height: 300px;
+    border: #CCC solid 1px;
+    background-color: #0B82C4;
+    margin-right: 10px;
+    margin-left: 6px;
+    margin:1px;
+    border-radius:10px;
+    font-family:Arial;
+    font-size:14px;
+    color:white;
+}
+
+.temizle{clear:both;}
+
+

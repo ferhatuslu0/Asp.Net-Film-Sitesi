@@ -1,0 +1,17 @@
+﻿.iletisimSol, .iletisimSag
+{
+    width:450px; float:left; margin-bottom:20px; margin-left:150px;
+}
+.iletisimSol {background-color:white; border-radius:10px;
+    margin-left: 0px;
+    text-align: center;
+    color: black;
+}
+.iletisimSag
+{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:20px;
+    text-align:center; color:black; font-style:italic;
+}
+.iletisimResim{width:445px;}
+

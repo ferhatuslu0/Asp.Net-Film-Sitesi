@@ -1,0 +1,125 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="yonetimP.master.cs" Inherits="yonetimP_yonetimP" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>HD Film Bizde - Yönetim Paneli</title>
+    <link href="../stil/stil.css" rel="stylesheet" type="text/css" />
+
+    <script src="../js/jquery-1.11.2.min.js"></script>
+    <link href="../stil/filmler.css" rel="stylesheet" type="text/css" />
+
+    <link href="../menu/css/graphite.css" rel="stylesheet" />
+    <link href="../menu/css/dcaccordion.css" rel="stylesheet" />
+    <script src="../js/jquery.cycle.all.js"></script>
+    <script src="../menu/js/jquery.cookie.js"></script>
+    <script src="../menu/js/jquery.dcjqaccordion.2.7.min.js"></script>
+    <script src="../menu/js/jquery.hoverIntent.minified.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.filmgecisi').cycle({
+                fx: 'scrollUp',
+                pause: 3
+            });
+
+        });
+        $(document).ready(function ($) {
+            $('#acilirmenu').dcAccordion({
+                eventType: 'click',
+                autoClose: true,
+                saveState: true,
+                disableLink: true,
+                speed: 'slow',
+                showCount: false,
+                autoExpand: true,
+                cookie: 'dcjq-accordion-1',
+                classExpand: 'dcjq-current-parent'
+            });
+
+        });
+    </script>
+    <link href="yonetimStill/yonetimStill.css" rel="stylesheet" type="text/css" />
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+         <div id="tasiyici">
+   
+   <div id="logoust"></div>
+   <div class="menuler">
+        <div class="YonetimBaslik">
+           <h1>YÖNETİM PANELİ</h1>
+       </div>
+       <div class="kullanici">
+        Hoşgeldiniz:
+           <asp:Label ID="lblKullaniciAdi" ForeColor="White" Font-Bold="true" runat="server"></asp:Label>
+           <asp:ImageButton ID="ibtnCikis" ImageUrl="~/resimler/yonetim/cikis.png" ToolTip="Çıkış Yap" runat="server" OnClick="ibtnCikis_Click" />
+       </div>
+       
+   </div>
+  
+             
+        <div class="YonetimTasiyici">
+            <div class="Yonetimsag">
+            <div class="yonetimMenu">
+           
+            <h3 class="basliklar">Yönetim Menüsü</h3>
+            <%#Eval("kategoriAd") %>
+                <div class="graphite demo-container">
+                     
+                    <ul class="accordion" id="acilirmenu">
+                               <li><a href="#">Filmler</a>                                   
+                                    <ul>
+                                        <li><a href="FilmEkle.aspx">Film Ekle</a></li>
+                                        <li><a href="Filmler.aspx">Film Düzenle</a></li>                                       
+                                    </ul>
+                                </li>
+                               <li><a href="#">Kategoriler</a>                                   
+                                    <ul>
+                                        <li><a href="KategoriEkle.aspx">Kategori Ekle </a></li>
+                                        <li><a href="Kategoriler.aspx">Kategori Düzenle </a></li>
+                                        <li><a href="AltKategoriEkle.aspx">Alt Kategori Ekle</a></li>
+                                        <li><a href="AltKategoriler.aspx">Alt Kategori Düzenle</a></li>                                       
+                                    </ul>
+                                </li>
+                               <li><a href="#">Üyeler</a>                                   
+                                    <ul>
+                                        <li><a href="UyeEkle.aspx">Üye Ekle</a></li>
+                                        <li><a href="Uyeler.aspx">Üye Düzenle</a></li>                                       
+                                    </ul>
+                                </li>    
+                             
+      
+                    </ul>
+
+                
+                </div>
+
+        </div>
+         </div>
+         </div>
+
+             <div class="Yonetimsol">
+                 <asp:ContentPlaceHolder id="Yonetimicerik" runat="server">
+        
+                 </asp:ContentPlaceHolder>
+</div>
+             
+   
+     <div class="temizle"></div>
+     
+     <div id="footer">
+     <p>
+     &copy; Tüm Haklarımız Saklıdır || ferhatuslu0@gmail.com || Ferhat Uslu
+     </p> 
+     </div>
+    </div>
+    
+    </form>
+</body>
+</html>
